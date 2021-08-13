@@ -244,47 +244,8 @@ footer {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  body {
-    height: 800px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-  }
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
 
-  .bg-pattern-top-mobile,
-  .bg-pattern-bottom-mobile {
-    display: none;
-  }
-  main,
-  .cards-buyer {
-    width: 400px;
-    margin: auto;
-  }
-  main {
-    margin-right: 0;
-  }
-
-  .buyer-card {
-    width: 350px;
-    height: 200px;
-  }
-
-  .buyer-speech > p {
-    width: 300px;
-  }
-
-  footer {
-    position: absolute;
-    height: 60px;
-    width: 100%;
-    top: 90%;
-    margin-top: 30px;
-   
-  }
-}
-
-@media screen and (min-width: 1440px) {
   html,
   body {
     height: 800px;
