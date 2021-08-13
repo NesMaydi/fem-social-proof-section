@@ -1,0 +1,404 @@
+:root {
+  --bg-body: #fff;
+  --title-card-bg-color: #512051;
+  --intro-paragraph-color: #927b91;
+  --rated-bg-color: #f7f2f7;
+  --verified-buyer-color: #ee69a4;
+  --txt-color: #ffffff;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Spartan";
+
+  background-color: var(--bg-body);
+}
+.bg-pattern-top-desktop,
+.bg-pattern-bottom-desktop {
+  display: none;
+}
+
+.bg-pattern-top-mobile {
+  width: 374px;
+  height: 232px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.bg-pattern-bottom-mobile {
+  width: 185px;
+  height: 673px;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+main {
+  margin: 80px auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  width: 327px;
+  height: 102px;
+  text-align: center;
+  margin: auto;
+  color: var(--title-card-bg-color);
+  margin-bottom: 18px;
+}
+
+#intro {
+  font-size: 15px;
+  line-height: 25px;
+  width: 327px;
+  height: 100px;
+  color: var(--intro-paragraph-color);
+  letter-spacing: -0.5px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 49px;
+}
+.stars {
+  position: relative;
+  margin-top: 16px;
+}
+.rated-card {
+  width: 327px;
+  height: 78px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--title-card-bg-color);
+  background-color: var(--rated-bg-color);
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.cards-buyer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buyer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 327px;
+  height: 248px;
+  background-color: var(--title-card-bg-color);
+  border-radius: 8px;
+  margin-bottom: 18px;
+}
+
+.buyer-info {
+  width: 160px;
+  height: 40px;
+  display: flex;
+  margin-left: 28px;
+  margin-bottom: 26px;
+}
+.img-box {
+  margin-right: 23px;
+}
+.buyer-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  width: 97px;
+  height: 34px;
+}
+
+.long-name {
+  width: 100px;
+}
+
+.buyer-name {
+  font-size: 13px;
+  font-weight: 700px;
+  color: var(--bg-body);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.verified {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--verified-buyer-color);
+  margin: 0;
+}
+
+.buyer-speech > p {
+  width: 263px;
+  height: 110px;
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--bg-body);
+  line-height: 22px;
+  letter-spacing: -0.232143px;
+  margin: 0 36px 0 34px;
+}
+
+#buyer-img1 {
+  background-image: url(images/image-colton.jpg);
+}
+
+#buyer-img2 {
+  background-image: url(images/image-irene.jpg);
+}
+
+#buyer-img3 {
+  background-image: url(images/image-anne.jpg);
+}
+
+footer {
+  text-align: center;
+  width: 190px;
+  height: 80px;
+  background-color: var(--txt-color);
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin: auto;
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .bg-pattern-top-mobile > img {
+    width: 310px;
+  }
+
+  .bg-pattern-bottom-mobile {
+    display: none;
+  }
+
+  main {
+    width: 300px;
+    margin: 30px auto;
+  }
+  h1,
+  #intro,
+  .rated-card,
+  .buyer-card {
+    width: 300px;
+  }
+
+  .buyer-speech > p {
+    margin: 0 26px 0 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    max-height: 950px;
+    width: 100%;
+  }
+  .bg-pattern-top-mobile,
+  .bg-pattern-bottom-mobile {
+    display: none;
+  }
+
+  .bg-pattern-top-desktop,
+  .bg-pattern-bottom-desktop {
+    display: block;
+    position: absolute;
+  }
+
+  .bg-pattern-top-desktop {
+    top: 0;
+    right: 0;
+  }
+  .bg-pattern-bottom-desktop {
+    bottom: -20%;
+    right: 0;
+  }
+  footer {
+    mix-blend-mode: multiply;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  body {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bg-pattern-top-mobile,
+  .bg-pattern-bottom-mobile {
+    display: none;
+  }
+  main,
+  .cards-buyer {
+    width: 400px;
+    margin: auto;
+  }
+  main {
+    margin-right: 0;
+  }
+
+  .buyer-card {
+    width: 350px;
+    height: 200px;
+  }
+
+  .buyer-speech > p {
+    width: 300px;
+  }
+
+  footer {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html,
+  body {
+    height: 800px;
+    width: 100%;
+  }
+  .bg-pattern-top-mobile,
+  .bg-pattern-bottom-mobile {
+    display: none;
+  }
+
+  main {
+    width: 1110px;
+    height: 235px;
+    display: flex;
+    margin: 127px auto 72px auto;
+  }
+
+  header {
+    width: 445px;
+    height: 235px;
+    margin-right: 125px;
+  }
+
+  h1 {
+    text-align: left;
+
+    width: 445px;
+    height: 154px;
+    font-size: 48px;
+    margin-bottom: 6px;
+  }
+
+  #intro {
+    width: 445px;
+    height: 75px;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  aside {
+    margin-top: 35px;
+    width: 540px;
+    height: 200px;
+  }
+
+  .rated-card {
+    width: 445px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .stars {
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+
+  .rated-card > p {
+    margin-top: 21px;
+  }
+
+  .flex-start {
+    align-self: flex-start;
+  }
+
+  .baseline {
+    align-self: center;
+  }
+
+  .flex-end {
+    align-self: flex-end;
+  }
+
+  .cards-buyer {
+    display: flex;
+    flex-direction: row;
+    width: 1110px;
+    height: 266px;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .buyer-card {
+    width: 350px;
+    height: 234px;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+
+  .buyer-card:last-child {
+    margin-right: 0;
+  }
+
+  .buyer-info {
+    margin-left: 32px;
+    margin-bottom: 26px;
+  }
+
+  .buyer-speech > p {
+    width: 286px;
+    height: 88px;
+    font-weight: 500;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90px;
+    width: 1000px;
+
+    margin: 50px auto 0 auto;
+  }
+}

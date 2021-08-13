@@ -11,51 +11,144 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Social proof section</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    10,000+ of our users love our products.
+    <div class="bg-pattern-top-desktop">
+      <img src="images/bg-pattern-top-desktop.svg" alt="" />
+    </div>
+    <div class="bg-pattern-top-mobile">
+      <img src="images/bg-pattern-top-mobile.svg" alt="pattern-top" />
+    </div>
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
+    <main id="main">
+      <header id="header">
+        <h1>10,000+ of our users love our products.</h1>
 
-    <div class="attribution">
+        <p id="intro">
+          We only provide great products combined with excellent customer
+          service. See what our satisfied customers are saying about our
+          services.
+        </p>
+      </header>
+
+      <aside id="aside-stars">
+        <section class="rated-card flex-start">
+          <div class="stars">
+            <img src="images/icon-star.svg" alt="stars" />
+            <img src="images/icon-star.svg" alt="stars" />
+            <img src="images/icon-star.svg" alt="stars" />
+            <img src="images/icon-star.svg" alt="stars" />
+            <img src="images/icon-star.svg" alt="stars" />
+          </div>
+          <p>Rated 5 Stars in Reviews</p>
+        </section>
+        <section class="rated-card baseline">
+          <div class="stars">
+            <img src="images/icon-star.svg" alt="stars" />
+            <img src="images/icon-star.svg" alt="stars" />
+            <img src="images/icon-star.svg" alt="stars" />
+            <img src="images/icon-star.svg" alt="stars" />
+            <img src="images/icon-star.svg" alt="stars" />
+          </div>
+          <p>Rated 5 Stars in Report Guru</p>
+        </section>
+        <section class="rated-card flex-end">
+          <div class="stars">
+            <img src="images/icon-star.svg" alt="stars" />
+            <img src="images/icon-star.svg" alt="stars" />
+            <img src="images/icon-star.svg" alt="stars" />
+            <img src="images/icon-star.svg" alt="stars" />
+            <img src="images/icon-star.svg" alt="stars" />
+          </div>
+          <p>Rated 5 Stars in BestTech</p>
+        </section>
+      </aside>
+    </main>
+
+    <section class="cards-buyer">
+      <section class="buyer-card flex-start">
+        <div class="buyer-info">
+          <div class="img-box">
+            <div class="buyer-img" id="buyer-img1"></div>
+          </div>
+          <div class="info-box">
+            <h3 class="buyer-name">Colton Smith</h3>
+            <p class="verified">Verified Buyer</p>
+          </div>
+        </div>
+
+        <div class="buyer-speech">
+          <p>
+            "We needed the same printed design as the one we had ordered a week
+            prior. Not only did they find the original order, but we also
+            received it in time. Excellent!"
+          </p>
+        </div>
+      </section>
+
+      <section class="buyer-card baseline">
+        <div class="buyer-info">
+          <div class="img-box">
+            <div class="buyer-img" id="buyer-img2"></div>
+          </div>
+          <div class="info-box">
+            <h3 class="buyer-name">Irene Roberts</h3>
+            <p class="verified">Verified Buyer</p>
+          </div>
+        </div>
+
+        <div class="buyer-speech">
+          <p>
+            "Customer service is always excellent and very quick turn around.
+            Completely delighted with the simplicity of the purchase and the
+            speed of delivery."
+          </p>
+        </div>
+      </section>
+
+      <section class="buyer-card flex-end">
+        <div class="buyer-info">
+          <div class="img-box">
+            <div class="buyer-img" id="buyer-img3"></div>
+          </div>
+          <div class="info-box">
+            <h3 class="buyer-name long-name">Anne Wallace</h3>
+            <p class="verified">Verified Buyer</p>
+          </div>
+        </div>
+
+        <div class="buyer-speech">
+          <p>
+            "Put an order with this company and can only praise them for the
+            very high standard. Will definitely use them again and recommend
+            them to everyone!"
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <div class="bg-pattern-bottom-desktop">
+      <img src="images/bg-pattern-bottom-desktop.svg" alt="" />
+    </div>
+    <div class="bg-pattern-bottom-mobile">
+      <img src="images/bg-pattern-bottom-mobile.svg" alt="" />
+    </div>
+
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      >
+      Coded by <a href="https://github.com/NesMaydi">NesMaydi</a>
+    </footer>
   </body>
 </html>
