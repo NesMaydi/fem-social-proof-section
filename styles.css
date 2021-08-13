@@ -217,6 +217,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   body {
+    max-height: 950px;
     width: 100%;
   }
   .bg-pattern-top-mobile,
@@ -239,8 +240,6 @@ footer {
     right: 0;
   }
   footer {
-    display: block;
-
     mix-blend-mode: multiply;
   }
 }
@@ -279,11 +278,9 @@ footer {
     position: absolute;
     height: 60px;
     width: 100%;
-    bottom: 0;
+    top: 90%;
     margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+   
   }
 }
 
