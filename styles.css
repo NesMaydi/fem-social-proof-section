@@ -239,8 +239,8 @@ footer {
     right: 0;
   }
   footer {
-    position: absolute;
-    bottom: 0;
+    display: block;
+
     mix-blend-mode: multiply;
   }
 }
